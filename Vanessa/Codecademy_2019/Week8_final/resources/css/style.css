@@ -218,6 +218,63 @@ header .mobile{
 
 
 /* LEARNING SECTION */
+#learning {
+  background-color: #D81E5B;
+  color: white;
+  padding: 4rem 0rem;
+}
+
+#learning-container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.learning {
+  max-width: 20rem;
+  min-width: 10rem;
+  padding: 0.5rem;
+  background-color: rgba(0,0,0,0.15);
+  color: white;
+  margin: 0.8rem 0.5rem;
+}
+
+.imgbox {
+  position: relative;
+}
+
+.textcontent-learning {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  transition: bottom 0.6s ease-out;
+}
+
+.textcontent-learning:hover {
+  bottom: 2rem;
+  color: white;
+}
+
+.textcontent-learning h2 {
+  font-family: 'Bree Serif', serif;
+  font-size: 1.6rem;
+  background-color: rgba(216,30,91,0.5);
+  padding: 0.5rem 1rem;
+}
+
+#learning-container p {
+  margin-top: 1rem;
+}
 
 
 
@@ -265,4 +322,22 @@ header .mobile{
     margin-top: 4rem;
     margin-left: 0%;
   }
+  .learning .imgbox img {
+    display: none;
+  }
+  .learning {
+    padding:  1rem 1.8rem;
+    background-image: url("../images/thesis-now-and-then.jpg");
+    transition: filter 1s;
+  }
+  .learning:hover {
+    filter: saturate(190%);
+  }
+  .textcontent-learning {
+    position: relative;
+  }
+  .textcontent-learning h2 {
+    font-size: 2.3rem;
+  }
+
 }
