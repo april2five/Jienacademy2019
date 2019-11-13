@@ -327,7 +327,7 @@ header .mobile{
   }
   .learning {
     padding:  1rem 1.8rem;
-    background-image: url("../images/thesis-now-and-then.jpg");
+    /* background-image: url("../images/thesis-now-and-then.jpg"); */
     transition: filter 1s;
   }
   .learning:hover {
