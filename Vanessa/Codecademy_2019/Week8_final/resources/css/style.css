@@ -22,23 +22,24 @@ a:hover{
 /* SIDE POPUP */
 #popup {
   position: fixed;
-  left: -36%;
-  z-index: 10;
-  width: 40%;
+  z-index: 100;
+  max-width: 40rem;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: left 1s;
-}
-
-#popup:hover {
-  left: 0%;
 }
 
 #popup-container {
   display: flex;
   align-items: center;
+  position: relative;
+  left: -36rem;
+  transition: left 1s;
+}
+
+#popup-container:hover {
+  left: 0rem;
 }
 
 .popup-main {
@@ -397,9 +398,12 @@ footer {
   .textcontent-learning h2 {
     font-size: 2.3rem;
   }
-  #popup {
-    left: -67%;
-    width: 80%;
+  #popup-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: -27rem;
+    transition: left 1s;
   }
 
 }
