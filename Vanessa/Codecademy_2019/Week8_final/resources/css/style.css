@@ -19,6 +19,47 @@ a:hover{
 }
 
 
+/* SIDE POPUP */
+#popup {
+  position: fixed;
+  left: -36%;
+  z-index: 10;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: left 1s;
+}
+
+#popup:hover {
+  left: 0%;
+}
+
+#popup-container {
+  display: flex;
+  align-items: center;
+}
+
+.popup-main {
+  background-color: rgba(213,192,85,0.9);
+  color: white;
+  padding: 5rem 1rem 5rem 2rem;
+  font-family: 'Bree Serif', serif;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  display: flex;
+  align-items: center;
+  min-height: 5rem;
+}
+
+.popup-handle {
+  background-color: rgba(213,192,85,0.9);
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+}
+
+
+
 /* HEADER NAVIGATION */
 header .desktop, .mobile {
   display: flex;
@@ -277,6 +318,23 @@ header .mobile{
 }
 
 
+/* FOOTER SECTION */
+footer {
+  padding: 2rem 1rem;
+  background-color: #133E3A;
+  color: #ccc;
+}
+
+#footer-container {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;justify-content: space-between;
+  text-transform: uppercase;
+}
+
+.changecolor {
+  fill: orange;
+}
 
 
 
@@ -338,6 +396,10 @@ header .mobile{
   }
   .textcontent-learning h2 {
     font-size: 2.3rem;
+  }
+  #popup {
+    left: -67%;
+    width: 80%;
   }
 
 }
